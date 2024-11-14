@@ -1,0 +1,173 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./pexels-souvenirpixels-1519088.jpg'); /* Make sure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Main App Container */
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly increase opacity for better readability */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h1 {
+  font-size: 2.2em;
+  color: #003d73;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #023e8a;
+  margin-bottom: 15px;
+}
+
+/* RideForm Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(224, 247, 250, 0.9);
+  border-radius: 8px;
+  border: 1px solid #b2ebf2;
+}
+
+label {
+  font-weight: bold;
+  color: #00796b;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+  padding: 10px;
+  border: 1px solid #b2ebf2;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1em;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+}
+
+/* RideList Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #e3f2fd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* List Item Text */
+li strong {
+  color: #1a73e8;
+}
+
+/* Button Styling */
+button {
+  padding: 8px 12px;
+  font-size: 0.9em;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 120px;
+  margin-top: 5px;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Custom Button Colors */
+button.book {
+  background-color: #4caf50; /* Green for Book Ride */
+}
+
+button.cancel {
+  background-color: #f44336; /* Red for Cancel Ride */
+}
+
+button.ticket {
+  background-color: #ff9800; /* Orange for Ticket Button */
+}
+
+button.receipt {
+  background-color: #fdb818; /* Yellow for Receipt Button */
+}
+
+/* Button Container Styling for Aligning Book Ride and Delete Ride */
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: flex-start; /* Align to the left */
+}
+
+/* Button Styling for Book Ride and Delete Ride */
+button.book, button.delete {
+  padding: 10px 20px; /* Consistent padding */
+  font-size: 0.9em; /* Consistent font size */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 150px; /* Consistent width */
+  text-align: center; /* Center text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+button.book {
+  background-color: #4caf50; /* Green for Book Ride */
+}
+
+button.delete {
+  background-color: red; /* Red for Delete Ride */
+}
+
+button.book:hover, button.delete:hover {
+  opacity: 0.9;
+  transform: scale(1.05); /* Slight scaling effect */
+}
